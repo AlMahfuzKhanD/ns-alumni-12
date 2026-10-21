@@ -144,17 +144,17 @@ Upon receiving the command for any phase, the agent will:
 * **Primary Reference Docs**: [`09_charity_project_management.md`](file:///e:/Aman/Laravel/ns-alumni-12/docs/09_charity_project_management.md), [`10_accounting_system.md`](file:///e:/Aman/Laravel/ns-alumni-12/docs/10_accounting_system.md), [`11_notice_job_module.md`](file:///e:/Aman/Laravel/ns-alumni-12/docs/11_notice_job_module.md)
 * **Objective**: Build admin controls for charity project creation, accounting transactions, notices, and job postings.
 * **Key Tasks**:
-  - [ ] **Charity & Donation Management** (`resources/js/pages/admin/projects/`):
+  - [x] **Charity & Donation Management** (`resources/js/pages/admin/projects/`):
     - `ProjectManager.vue` (Create/edit campaign, set target amount, beneficiary details, upload medical proof)
-    - `DonationList.vue` (Donation entries table, donor name, payment channel, verify button)
-  - [ ] **Accounting & Cash Flow** (`resources/js/pages/admin/accounting/`):
+    - `DonationList.vue` (Donation entries table, donor name, payment channel, verify button, printable donation receipt)
+  - [x] **Accounting & Cash Flow** (`resources/js/pages/admin/accounting/`):
     - `TransactionLedger.vue` (Central income/expense ledger, category filter, date filter)
     - `AddExpenseModal.vue` (Attach expense to project or administrative category, attach bill voucher)
-    - `FinancialReportView.vue` (Monthly cash flow report, project-by-project profit/loss)
-  - [ ] **Notices & Job Board Management** (`resources/js/pages/admin/notices/`):
+    - `FinancialReportView.vue` (Monthly cash flow report, project-by-project profit/loss, audit sheet)
+  - [x] **Notices & Job Board Management** (`resources/js/pages/admin/notices/`):
     - `NoticeManager.vue` (Create notice, set visibility [Public, Members, Committee], set expiration date)
     - `JobCircularManager.vue` (Post job circular with company details, deadline, and application URL)
-* **Verification**: Complete admin control over campaigns, accounting ledger entries, and announcement publishing.
+* **Verification**: Complete admin control over campaigns, accounting ledger entries, and announcement publishing. [COMPLETED]
 
 ---
 

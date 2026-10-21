@@ -129,6 +129,44 @@ const routes = [
         meta: { title: 'Monthly Chada Dues & Receipts - NS-12' }
     },
 
+    // Admin Charity, Accounting & Communications (Phase 1.6)
+    {
+        path: '/admin/projects',
+        name: 'admin-projects',
+        component: () => import('@/pages/admin/projects/ProjectManager.vue'),
+        meta: { title: 'Charity & Aid Projects - NS-12' }
+    },
+    {
+        path: '/admin/donations',
+        name: 'admin-donations',
+        component: () => import('@/pages/admin/projects/DonationList.vue'),
+        meta: { title: 'Donation Verification & Ledger - NS-12' }
+    },
+    {
+        path: '/admin/accounting',
+        name: 'admin-accounting',
+        component: () => import('@/pages/admin/accounting/TransactionLedger.vue'),
+        meta: { title: 'Central Accounting Ledger - NS-12' }
+    },
+    {
+        path: '/admin/accounting/reports',
+        name: 'admin-accounting-reports',
+        component: () => import('@/pages/admin/accounting/FinancialReportView.vue'),
+        meta: { title: 'Financial Reports & Statements - NS-12' }
+    },
+    {
+        path: '/admin/notices',
+        name: 'admin-notices',
+        component: () => import('@/pages/admin/notices/NoticeManager.vue'),
+        meta: { title: 'Notice & Announcements Manager - NS-12' }
+    },
+    {
+        path: '/admin/jobs',
+        name: 'admin-jobs',
+        component: () => import('@/pages/admin/notices/JobCircularManager.vue'),
+        meta: { title: 'Job Circulars & Career Board - NS-12' }
+    },
+
     // Developer Showcase
     {
         path: '/ui-showcase',
