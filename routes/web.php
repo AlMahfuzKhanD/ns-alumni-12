@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Hybrid Laravel + Vue: Serve main SPA shell for all non-API web routes
+Route::get('/{any?}', function () {
+    return view('app');
+})->where('any', '^(?!api).*$');
