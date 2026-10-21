@@ -7,6 +7,12 @@ const routes = [
         component: () => import('@/pages/public/Home.vue'),
         meta: { title: 'Alumni Association of NS - 12' }
     },
+    {
+        path: '/ui-showcase',
+        name: 'ui-showcase',
+        component: () => import('@/pages/dev/UiShowcase.vue'),
+        meta: { title: 'UI Component Showcase - NS-12' }
+    },
     // Fallback route
     {
         path: '/:pathMatch(.*)*',

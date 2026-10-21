@@ -1,85 +1,103 @@
 <template>
-    <div class="min-h-screen flex flex-col bg-surface-bg">
-        <!-- Top Navigation Bar Preview -->
-        <header class="bg-white border-b border-border-main sticky top-0 z-40">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-                <div class="flex items-center space-x-3">
-                    <div class="w-10 h-10 rounded-xl bg-primary flex items-center justify-center text-white shadow-sm font-bold text-lg">
-                        NS
-                    </div>
-                    <div>
-                        <span class="font-bold text-lg text-text-main tracking-tight">Alumni Association</span>
-                        <span class="ml-1.5 px-2 py-0.5 text-xs font-semibold bg-primary-light text-primary rounded-md">NS - 12</span>
-                    </div>
+    <PublicLayout>
+        <!-- Hero Section -->
+        <section class="relative overflow-hidden py-16 sm:py-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center text-center">
+                <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-primary-light text-primary text-xs font-semibold mb-6 shadow-xs">
+                    <Sparkles class="w-4 h-4" />
+                    <span>Official Digital Platform of NS - 12</span>
                 </div>
 
-                <div class="flex items-center space-x-3">
-                    <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-secondary-light text-secondary">
-                        <span class="w-2 h-2 mr-1.5 rounded-full bg-secondary"></span>
-                        Phase 1.0 Ready
-                    </span>
-                </div>
-            </div>
-        </header>
+                <h1 class="text-3xl sm:text-6xl font-extrabold text-text-main tracking-tight max-w-4xl leading-tight">
+                    Once Classmates, <br class="hidden sm:inline" />
+                    <span class="text-primary">Forever Connected</span>
+                </h1>
 
-        <!-- Hero Card Preview -->
-        <main class="flex-1 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 flex flex-col items-center justify-center text-center">
-            <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-primary-light text-primary text-xs font-semibold mb-6">
-                <Sparkles class="w-4 h-4" />
-                <span>Hybrid Laravel 12 + Vue 3 Setup Complete</span>
-            </div>
+                <p class="mt-5 text-base sm:text-xl text-text-muted max-w-2xl leading-relaxed">
+                    Building lifelong bonds, supporting sick teachers and friends in times of crisis, and ensuring 100% financial transparency in community funds.
+                </p>
 
-            <h1 class="text-3xl sm:text-5xl font-extrabold text-text-main tracking-tight max-w-3xl leading-tight">
-                Once Classmates, <span class="text-primary">Forever Connected</span>
-            </h1>
+                <div class="mt-8 flex flex-wrap items-center justify-center gap-3">
+                    <router-link to="/auth/register">
+                        <BaseButton variant="primary" size="lg">
+                            Join Alumni Association
+                        </BaseButton>
+                    </router-link>
 
-            <p class="mt-4 text-base sm:text-lg text-text-muted max-w-2xl">
-                Alumni Association of NS - 12 digital platform is now initialized with Vue 3, Vite, Tailwind CSS, Pinia, and Lucide Icons.
-            </p>
-
-            <!-- Palette Status Cards -->
-            <div class="grid grid-cols-1 sm:grid-cols-4 gap-4 mt-10 w-full max-w-4xl">
-                <div class="p-5 bg-white rounded-2xl border border-border-main shadow-sm flex flex-col items-center">
-                    <div class="w-10 h-10 rounded-xl bg-primary flex items-center justify-center text-white mb-3">
-                        <ShieldCheck class="w-5 h-5" />
-                    </div>
-                    <span class="font-semibold text-text-main text-sm">Deep Blue</span>
-                    <span class="text-xs text-text-muted mt-1">Trust & Unity (#1D4ED8)</span>
-                </div>
-
-                <div class="p-5 bg-white rounded-2xl border border-border-main shadow-sm flex flex-col items-center">
-                    <div class="w-10 h-10 rounded-xl bg-secondary flex items-center justify-center text-white mb-3">
-                        <HeartHandshake class="w-5 h-5" />
-                    </div>
-                    <span class="font-semibold text-text-main text-sm">Emerald Green</span>
-                    <span class="text-xs text-text-muted mt-1">Charity & Aid (#10B981)</span>
-                </div>
-
-                <div class="p-5 bg-white rounded-2xl border border-border-main shadow-sm flex flex-col items-center">
-                    <div class="w-10 h-10 rounded-xl bg-accent flex items-center justify-center text-white mb-3">
-                        <Award class="w-5 h-5" />
-                    </div>
-                    <span class="font-semibold text-text-main text-sm">Amber Gold</span>
-                    <span class="text-xs text-text-muted mt-1">Recognition (#F59E0B)</span>
-                </div>
-
-                <div class="p-5 bg-white rounded-2xl border border-border-main shadow-sm flex flex-col items-center">
-                    <div class="w-10 h-10 rounded-xl bg-sidebar-bg flex items-center justify-center text-white mb-3">
-                        <Users class="w-5 h-5" />
-                    </div>
-                    <span class="font-semibold text-text-main text-sm">Dark Slate</span>
-                    <span class="text-xs text-text-muted mt-1">Admin Sidebar (#0F172A)</span>
+                    <router-link to="/ui-showcase">
+                        <BaseButton variant="outline" size="lg">
+                            <span class="flex items-center space-x-2">
+                                <LayoutGrid class="w-4 h-4 mr-2" />
+                                <span>Browse UI Component Library</span>
+                            </span>
+                        </BaseButton>
+                    </router-link>
                 </div>
             </div>
-        </main>
+        </section>
 
-        <!-- Footer -->
-        <footer class="bg-white border-t border-border-main py-6 text-center text-xs text-text-muted">
-            Alumni Association of NS - 12 &copy; 2026. Built with Laravel 12 & Vue 3.
-        </footer>
-    </div>
+        <!-- Brand Values / Stats Grid -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <BaseCard hoverable>
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 rounded-xl bg-primary flex items-center justify-center text-white shrink-0 shadow-sm">
+                            <Users class="w-6 h-6" />
+                        </div>
+                        <div>
+                            <p class="text-xs font-semibold text-text-muted uppercase tracking-wider">Lifelong Friends</p>
+                            <h3 class="text-xl font-bold text-text-main mt-0.5">Connected</h3>
+                            <p class="text-xs text-text-muted mt-1">Batch directory & networking</p>
+                        </div>
+                    </div>
+                </BaseCard>
+
+                <BaseCard hoverable>
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 rounded-xl bg-secondary flex items-center justify-center text-white shrink-0 shadow-sm">
+                            <HeartHandshake class="w-6 h-6" />
+                        </div>
+                        <div>
+                            <p class="text-xs font-semibold text-text-muted uppercase tracking-wider">Charity Projects</p>
+                            <h3 class="text-xl font-bold text-text-main mt-0.5">Mutual Aid</h3>
+                            <p class="text-xs text-text-muted mt-1">Medical & humanitarian support</p>
+                        </div>
+                    </div>
+                </BaseCard>
+
+                <BaseCard hoverable>
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 rounded-xl bg-accent flex items-center justify-center text-white shrink-0 shadow-sm">
+                            <Award class="w-6 h-6" />
+                        </div>
+                        <div>
+                            <p class="text-xs font-semibold text-text-muted uppercase tracking-wider">Honoring Mentors</p>
+                            <h3 class="text-xl font-bold text-text-main mt-0.5">Teacher Support</h3>
+                            <p class="text-xs text-text-muted mt-1">Standing beside sick teachers</p>
+                        </div>
+                    </div>
+                </BaseCard>
+
+                <BaseCard hoverable>
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 rounded-xl bg-sidebar-bg flex items-center justify-center text-white shrink-0 shadow-sm">
+                            <ShieldCheck class="w-6 h-6" />
+                        </div>
+                        <div>
+                            <p class="text-xs font-semibold text-text-muted uppercase tracking-wider">Transparency</p>
+                            <h3 class="text-xl font-bold text-text-main mt-0.5">100% Traceable</h3>
+                            <p class="text-xs text-text-muted mt-1">Every taka accounted for</p>
+                        </div>
+                    </div>
+                </BaseCard>
+            </div>
+        </section>
+    </PublicLayout>
 </template>
 
 <script setup>
-import { Sparkles, ShieldCheck, HeartHandshake, Award, Users } from 'lucide-vue-next';
+import PublicLayout from '@/layouts/PublicLayout.vue';
+import BaseButton from '@/components/ui/BaseButton.vue';
+import BaseCard from '@/components/ui/BaseCard.vue';
+import { Sparkles, Users, HeartHandshake, Award, ShieldCheck, LayoutGrid } from 'lucide-vue-next';
 </script>
