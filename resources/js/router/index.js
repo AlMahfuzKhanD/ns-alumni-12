@@ -77,6 +77,26 @@ const routes = [
         meta: { title: 'Reset Password - NS-12' }
     },
 
+    // Role-Based Dashboards
+    {
+        path: '/admin/dashboard',
+        name: 'admin-dashboard',
+        component: () => import('@/pages/admin/dashboard/AdminDashboard.vue'),
+        meta: { title: 'Admin Overview - NS-12' }
+    },
+    {
+        path: '/admin/treasurer',
+        name: 'treasurer-dashboard',
+        component: () => import('@/pages/admin/dashboard/TreasurerDashboard.vue'),
+        meta: { title: 'Treasurer Financial Desk - NS-12' }
+    },
+    {
+        path: '/member/dashboard',
+        name: 'member-dashboard',
+        component: () => import('@/pages/member/MemberDashboard.vue'),
+        meta: { title: 'Member Dashboard - NS-12' }
+    },
+
     // Developer Showcase
     {
         path: '/ui-showcase',
