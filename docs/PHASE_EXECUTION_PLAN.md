@@ -126,17 +126,17 @@ Upon receiving the command for any phase, the agent will:
 * **Primary Reference Docs**: [`06_member_management.md`](file:///e:/Aman/Laravel/ns-alumni-12/docs/06_member_management.md), [`07_committee_management.md`](file:///e:/Aman/Laravel/ns-alumni-12/docs/07_committee_management.md), [`08_chada_management.md`](file:///e:/Aman/Laravel/ns-alumni-12/docs/08_chada_management.md)
 * **Objective**: Build admin tools for member approvals, committee setup, and monthly chada dues collection.
 * **Key Tasks**:
-  - [ ] **Member Management Screens** (`resources/js/pages/admin/members/`):
+  - [x] **Member Management Screens** (`resources/js/pages/admin/members/`):
     - `MemberList.vue` (Table with batch filter, profession filter, blood group filter, status badge)
     - `PendingApprovals.vue` (Review queue to approve/reject new alumni signups)
     - `MemberDetail.vue` (Full profile, contact details, payment history, committee history)
-  - [ ] **Committee Management Screens** (`resources/js/pages/admin/committee/`):
+  - [x] **Committee Management Screens** (`resources/js/pages/admin/committee/`):
     - `CommitteeManager.vue` (Create committee term, assign members to designations: President, Secretary, Treasurer)
-  - [ ] **Chada Management Screens** (`resources/js/pages/admin/chada/`):
+  - [x] **Chada Management Screens** (`resources/js/pages/admin/chada/`):
     - `ChadaDueList.vue` (Monthly dues table, due vs paid tracker, defaulters filter)
-    - `CollectPaymentModal.vue` (Member picker, month selector, amount, payment method [Cash, bKash, Nagad, Bank])
-    - `ChadaReceiptModal.vue` (Print-ready PDF-style receipt with serial number and association stamp)
-* **Verification**: Interactive member approval modal, member search/filter, and payment collection flow with receipt modal.
+    - `CollectPaymentModal.vue` / Integrated modal (Member picker, month selector, amount, payment method [Cash, bKash, Nagad, Bank])
+    - `ChadaReceiptModal.vue` / Integrated receipt modal (Print-ready PDF-style receipt with serial number and association stamp)
+* **Verification**: Interactive member approval modal, member search/filter, and payment collection flow with receipt modal. [COMPLETED]
 
 ---
 

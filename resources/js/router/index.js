@@ -97,6 +97,38 @@ const routes = [
         meta: { title: 'Member Dashboard - NS-12' }
     },
 
+    // Admin Operations & Member Management
+    {
+        path: '/admin/members',
+        name: 'admin-members',
+        component: () => import('@/pages/admin/members/MemberList.vue'),
+        meta: { title: 'Member Directory Management - NS-12' }
+    },
+    {
+        path: '/admin/members/pending',
+        name: 'admin-members-pending',
+        component: () => import('@/pages/admin/members/PendingApprovals.vue'),
+        meta: { title: 'Pending Applications Verification - NS-12' }
+    },
+    {
+        path: '/admin/members/:id',
+        name: 'admin-member-detail',
+        component: () => import('@/pages/admin/members/MemberDetail.vue'),
+        meta: { title: 'Member Profile & Ledger - NS-12' }
+    },
+    {
+        path: '/admin/committee',
+        name: 'admin-committee',
+        component: () => import('@/pages/admin/committee/CommitteeManager.vue'),
+        meta: { title: 'Committee & Leadership Manager - NS-12' }
+    },
+    {
+        path: '/admin/chada',
+        name: 'admin-chada',
+        component: () => import('@/pages/admin/chada/ChadaDueList.vue'),
+        meta: { title: 'Monthly Chada Dues & Receipts - NS-12' }
+    },
+
     // Developer Showcase
     {
         path: '/ui-showcase',
